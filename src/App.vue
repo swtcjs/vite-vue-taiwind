@@ -1,5 +1,8 @@
 <template>
    <div class="flex justify-between h-10"><ArrowLeftIcon /><ArrowUpIcon /><ArrowDownIcon /><ArrowRightIcon /></div>
+   <div class="flex justify-around items-center">
+     <AvatarDemo />
+   </div>
    <div class="mx-auto max-w-md">
       <h1 class="text-3xl"> Token </h1>
       <GithubTokenForm />
@@ -26,7 +29,9 @@
   <MenuDemo />
   <SelectMenuDemo />
   <DetailPage />
+  <LoginDemo />
   <!--
+   <IconDemo />
   <HeroSectionDemo />
   <GridDemo />
   <DropDownDemo />
@@ -38,7 +43,6 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { ChevronDownIcon, ArrowUpIcon, ArrowDownIcon, ArrowLeftIcon, ArrowRightIcon } from 'heroicons-vue3/solid'
 import GithubTokenForm from "./components/GithubTokenForm.vue"
 import User from "./components/User.vue"
 import Repos from "./components/Repos.vue"
@@ -48,29 +52,28 @@ import DetailPage from './components/DetailPage.vue'
 import SelectMenuDemo from "./components/SelectMenuDemo.vue"
 import HeroSectionDemo from './components/HeroSectionDemo.vue'
 import MenuDemo from './components/MenuDemo.vue'
+import LoginDemo from './components/LoginDemo.vue'
+import AvatarDemo from './components/AvatarDemo.vue'
 // import HeadDemo from './components/HeadDemo.vue'
+// import IconDemo from './components/IconDemo.vue'
 // import TableDemo from './components/TableDemo.vue'
 // import ModalDemo from './components/ModalDemo.vue'
 // import DropDownDemo from './components/DropDownMenu.vue'
 // import GridDemo from './components/GridDemo.vue'
 
 export default defineComponent({
-  name: 'App',
   components: {
     TailwindDemo,
     MenuDemo,
     HeroSectionDemo,
     SelectMenuDemo,
     DetailPage,
-    ChevronDownIcon,
-    ArrowUpIcon,
-    ArrowDownIcon,
-    ArrowLeftIcon,
-    ArrowRightIcon,
     GithubTokenForm,
     User,
     Repos,
-    ChartDemo
+    ChartDemo,
+    LoginDemo,
+    AvatarDemo
   }
 })
 </script>

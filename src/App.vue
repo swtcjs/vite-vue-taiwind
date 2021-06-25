@@ -25,6 +25,7 @@
         </p>
       </article>
    </div>
+   <TiptapDemo />
   <TailwindDemo />
   <MenuDemo />
   <SelectMenuDemo />
@@ -54,6 +55,7 @@ import HeroSectionDemo from './components/HeroSectionDemo.vue'
 import MenuDemo from './components/MenuDemo.vue'
 import LoginDemo from './components/LoginDemo.vue'
 import AvatarDemo from './components/AvatarDemo.vue'
+import TiptapDemo from './components/TiptapDemo.vue'
 // import HeadDemo from './components/HeadDemo.vue'
 // import IconDemo from './components/IconDemo.vue'
 // import TableDemo from './components/TableDemo.vue'
@@ -73,7 +75,8 @@ export default defineComponent({
     Repos,
     ChartDemo,
     LoginDemo,
-    AvatarDemo
+    AvatarDemo,
+    TiptapDemo
   }
 })
 </script>

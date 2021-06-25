@@ -5,7 +5,10 @@
     "build": "vite build",
     "serve": "vite preview"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@tiptap/starter-kit": "^2.0.0-beta.80",
+    "@tiptap/vue-3": "^2.0.0-beta.44"
+  },
   "devDependencies": {
     "@headlessui/vue": "^1.2.0",
     "@j-t-mcc/vue3-chartjs": "^1.1.2",
